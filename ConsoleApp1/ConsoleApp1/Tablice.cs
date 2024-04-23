@@ -36,5 +36,21 @@ namespace ConsoleApp1
             }
             Console.WriteLine();
         }
+        public void Sortuj_Tablice(int[] tab)
+        {
+            for(int i = 0; i < tab.Length - 1;i++)
+            {
+                for(int j = 0; j < tab.Length - i - 1; j++)
+                {
+                    if (tab[j] > tab[j+ 1])
+                    {
+                        int temp = tab[j];
+                        tab[j] = tab[j+ 1];
+                        tab[j+ 1] = temp;
+                    }
+                }
+            }
+           
+        }
     }
 }

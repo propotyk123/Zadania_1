@@ -10,5 +10,7 @@ class Program
        int[] tab = tablice.Stworz_Tablice();
         Console.Clear();
         tablice.Wyswietl_Tablice(tab);
+        tablice.Sortuj_Tablice(tab);
+        tablice.Wyswietl_Tablice(tab);
     }
 }
