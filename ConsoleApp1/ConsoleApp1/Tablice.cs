@@ -18,7 +18,7 @@ namespace ConsoleApp1
             Console.WriteLine("podaj dlugość tablicy");
             int dlugosc = int.Parse(Console.ReadLine());
             int[] ints = new int[dlugosc];
-            foreach (int i in ints)
+            for (int i = 0; i < ints.Length; i++)
             {
                 Console.Write("podaj liczbę: ");
                 ints[i] = int.Parse(Console.ReadLine());
@@ -26,6 +26,15 @@ namespace ConsoleApp1
             Console.WriteLine();
             return ints;
 
+        }
+        public void Wyswietl_Tablice(int[] tab)
+        {
+            Console.WriteLine("Elementy tablicy: ");
+            foreach (int i in tab)
+            {
+                Console.Write(i + ",");
+            }
+            Console.WriteLine();
         }
     }
 }
