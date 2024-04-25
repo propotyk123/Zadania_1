@@ -52,5 +52,22 @@ namespace ConsoleApp1
             }
            
         }
+        public void Przeszukaj_Tablice(int[] tab , int x)
+        {
+            bool odp = false;
+            for (int i = 0;i < tab.Length; i++) 
+            {
+                if (tab[i] == x)
+                {
+                    odp = true;
+                    break;
+                }
+                
+            }
+            if(odp == true) {
+                Console.WriteLine("liczba: " + x + " znajduje sie w tablicy");
+            }
+            
+        }
     }
 }
